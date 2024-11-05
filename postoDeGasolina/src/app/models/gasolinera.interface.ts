@@ -1,4 +1,4 @@
-export interface Root {
+export interface GasolinaResponse {
     "C.P.": string
     Dirección: string
     Horario: string
