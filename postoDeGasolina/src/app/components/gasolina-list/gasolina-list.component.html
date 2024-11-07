@@ -1,1 +1,23 @@
-<p>gasolina-list works!</p>
+<div class="cards">
+    @for(gasolinera of listadoGasolineras; track
+    listadoGasolineras.indexOf(gasolinera)) {
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Estación: {{ gasolinera.nombre }}</p>
+                    <p> IDEESS: {{ gasolinera.id }}</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">PRECIO</p>
+                    <p>Gasolina sin plomo 95:</p>
+                    <p>{{gasolinera.price95}}</p>
+                    <p>Diesel:</p>
+                    <p>{{gasolinera.priceDiesel}}</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    }
+</div>
+
+
