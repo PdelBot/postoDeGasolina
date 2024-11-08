@@ -8,12 +8,16 @@ import { GasolinaListComponent } from './components/gasolina-list/gasolina-list.
 import { provideHttpClient } from '@angular/common/http';
 import { MenuComponent } from './shared/menu/menu.component';
 import { CommonModule } from '@angular/common';
+import { GoogleMapsRoutePipe } from './pipes/google-maps-route.pipe';
+import { GoogleMapsLinkPipe } from './pipes/google-maps-link.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     GasolinaListComponent,
     MenuComponent,
+    GoogleMapsRoutePipe,
+    GoogleMapsLinkPipe,
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,11 @@
                 <div class="flip-card-front">
                     <p class="title">Estación: {{ gasolinera.nombre }}</p>
                     <p> IDEESS: {{ gasolinera.id }}</p>
+                    <a
+                    [href]="gasolinera | googleMapsRoute"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Cómo llegar</a>
                 </div>
                 <div class="flip-card-back">
                     <p class="title">PRECIO</p>
